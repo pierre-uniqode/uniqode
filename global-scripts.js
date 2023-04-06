@@ -1,5 +1,6 @@
 
-let addHeadingAnimation = function () {
+// Texts animations
+let addHeadingAnimation = () => {
     $(".skew-up").each(function (index) {
         const text = new SplitType($(this), {
             types: "lines, words",
@@ -31,10 +32,10 @@ let addHeadingAnimation = function () {
     });
 };
 
-let addParagraphsAnimation = function () {
+let addParagraphsAnimation = () => {
     $(".fade-up").each(function (index) {
         const text = new SplitType($(this), {
-            types: "lines, words, chars",
+            types: "lines, words",
             lineClass: "line"
         });
 
@@ -62,12 +63,30 @@ let addParagraphsAnimation = function () {
     });
 };
 
+// Smooth scroll
 let configureSmoothScroll = () => {
     ScrollSmoother.create({
         smooth: 1,
         effects: true,
         smoothTouch: 0.1,
     });
+}
+
+// Buttons animation
+let addPrimaryCTAsAnimation = () => {
+    const primaryCTAs = document.querySelectorAll(".primary-cta");
+
+    for(let i = 0 ; i < primaryCTAs.length ; i++) {
+        primaryCTAs[i].addEventListener("mouseover", () => {
+            primaryCTAs[i].style.backgroundColor = "#6F58FF";
+            primaryCTAs[i].querySelector("div").style.transform = "skewY(-10)";
+        });
+
+        primaryCTAs[i].addEventListener("mouseout", () => {
+            primaryCTAs[i].style.backgroundColor = "transparent";
+            primaryCTAs[i].querySelector("div").style.transform = "skewY(0)";
+        });
+    }
 }
 
 window.addEventListener("resize", () => {
@@ -78,4 +97,5 @@ window.addEventListener("DOMContentLoaded", () => {
     addHeadingAnimation();
     addParagraphsAnimation();
     configureSmoothScroll();
+    addPrimaryCTAsAnimation();
 });
