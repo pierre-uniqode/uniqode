@@ -1,4 +1,14 @@
 /* FLUID FONTS */
+:root {
+    --main-violet: #6F58FF;
+}
+
+::-moz-selection,
+::selection {
+    color: white;
+    background: var(--main-violet);
+}
+
 html,
 body {
     font-size: clamp(0.875rem, 0.862vw + 0.341rem, 1.375rem);
