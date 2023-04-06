@@ -1,6 +1,6 @@
 
 let addHeadingAnimation = function () {
-    $(".skrew-up").each(function (index) {
+    $(".skew-up").each(function (index) {
         const text = new SplitType($(this), {
             types: "lines, words",
             lineClass: "word-line"
