@@ -62,6 +62,14 @@ let addParagraphsAnimation = function () {
     });
 };
 
+let configureSmoothScroll = () => {
+    ScrollSmoother.create({
+        smooth: 1,
+        effects: true,
+        smoothTouch: 0.1,
+    });
+}
+
 window.addEventListener("resize", () => {
     addHeadingAnimation();
     addParagraphsAnimation();
@@ -69,4 +77,5 @@ window.addEventListener("resize", () => {
 window.addEventListener("DOMContentLoaded", () => {
     addHeadingAnimation();
     addParagraphsAnimation();
+    configureSmoothScroll();
 });
