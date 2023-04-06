@@ -1,0 +1,113 @@
+/* FLUID FONTS */
+html,
+body {
+    font-size: clamp(0.875rem, 0.862vw + 0.341rem, 1.375rem);
+    line-height: 1.5;
+}
+
+h1.homepage-heading {
+    font-size: clamp(3.188rem, 5.496vw + -0.22rem, 6.375rem);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.688rem, 4.741vw + -0.252rem, 5.438rem);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: clamp(1.875rem, 3.341vw + -0.196rem, 3.813rem);
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: clamp(1.313rem, 2.371vw + -0.157rem, 2.688rem);
+    line-height: 1.2;
+}
+
+p,
+a,
+.surtitle {
+    font-size: clamp(0.875rem, 0.862vw + 0.341rem, 1.375rem);
+    line-height: 1.5;
+}
+
+.primary-cta,
+.secondary-cta,
+.scroll-cta {
+    font-size: clamp(0.875rem, 0.647vw + 0.474rem, 1.25rem);
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 991px) {
+    html,
+    body {
+        font-size: 0.875rem;
+    }
+
+    h1.homepage-heading {
+        font-size: clamp(2.375rem, 5.83vw + -0.423rem, 3.188rem);
+    }
+
+    h1 {
+        font-size: clamp(2rem, 4.933vw + -0.368rem, 2.688rem);
+    }
+
+    h2 {
+        font-size: clamp(1.375rem, 3.587vw + -0.347rem, 1.875rem);
+    }
+
+    h3 {
+        font-size: clamp(1rem, 2.242vw + -0.076rem, 1.313rem);
+    }
+
+    p,
+    a,
+    .surtitle{
+        font-size: 0.875rem;
+    }
+
+    .primary-cta,
+    .secondary-cta,
+    .scroll-cta {
+        font-size: 0.875rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        font-size: clamp(0.75rem, 0.478vw + 0.645rem, 0.875rem);
+    }
+
+    h1.homepage-heading {
+        font-size: clamp(1.625rem, 2.871vw + 0.997rem, 2.375rem);
+    }
+
+    h1 {
+        font-size: clamp(1.125rem, 3.349vw + 0.392rem, 2rem);
+    }
+
+    h2 {
+        font-size: clamp(1rem, 1.435vw + 0.686rem, 1.375rem);
+    }
+
+    h3 {
+        font-size: clamp(0.875rem, 0.478vw + 0.77rem, 1rem);
+    }
+
+    .primary-cta,
+    .secondary-cta,
+    .scroll-cta {
+        font-size: clamp(0.75rem, 0.478vw + 0.645rem, 0.875rem);
+    }
+}
+/* END FLUID FONTS */
+
+/* ANIMATIONS STYLES */
+.word-line,
+.line {
+    overflow: hidden;
+    padding-top: 10px;
+}
+.skew-up, .fade-up {opacity: 0;}
+/* END ANIMATIONS STYLES */
