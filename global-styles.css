@@ -121,3 +121,35 @@ a,
 }
 .skew-up, .fade-up {opacity: 0;}
 /* END ANIMATIONS STYLES */
+
+/* BUTTONS STYLES */
+.secondary-cta  {
+    position: relative;
+}
+
+.secondary-cta div  {
+    transform: skewX(0);
+    transition: transform .2s ease;
+}
+
+.secondary-cta:hover div {
+    transform: skewX(-10deg);
+}
+
+.secondary-cta:after {
+    content: "";
+    width: calc(100% - 1.750rem);
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .2s ease;
+}
+
+.secondary-cta:hover:after {
+    transform: scaleX(1);
+}
+/* END BUTTONS STYLES */
