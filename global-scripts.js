@@ -23,9 +23,9 @@ let addHeadingAnimation = function () {
 
         tl.set(textInstance, { opacity: 1 }).from(word, {
             y: "100%",
-            skewX: "-6",
+            skewX: "-10",
             duration: 2,
-            stagger: 0.1,
+            stagger: 0.2,
             ease: "expo.out"
         });
     });
