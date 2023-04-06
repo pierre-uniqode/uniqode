@@ -127,29 +127,32 @@ a,
     position: relative;
 }
 
-.secondary-cta div  {
-    transform: skewX(0);
-    transition: transform .2s ease;
-}
-
-.secondary-cta:hover div {
-    transform: skewX(-10deg);
-}
-
 .secondary-cta:after {
     content: "";
     width: calc(100% - 1.750rem);
-    height: 1px;
+    height: 2px;
     background-color: white;
     position: absolute;
     bottom: 0;
     left: 0;
     transform-origin: left;
     transform: scaleX(0);
-    transition: transform .2s ease;
+    transition: transform 1s ease;
 }
 
 .secondary-cta:hover:after {
     transform: scaleX(1);
+}
+
+.secondary-cta img {
+    transition: transform .5s ease;
+}
+
+.secondary-cta:hover img.secondary-cta-icon {
+    transform: rotate(0deg);
+}
+
+.secondary-cta:hover img.scroll-cta-icon {
+    transform: rotate(90deg);
 }
 /* END BUTTONS STYLES */

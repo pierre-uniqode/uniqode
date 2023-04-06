@@ -79,7 +79,7 @@ let addPrimaryCTAsAnimation = () => {
     for(let i = 0 ; i < primaryCTAs.length ; i++) {
         primaryCTAs[i].addEventListener("mouseover", () => {
             primaryCTAs[i].style.backgroundColor = "#6F58FF";
-            primaryCTAs[i].querySelector("div").style.transform = "skewX(-10)";
+            primaryCTAs[i].querySelector("div").style.transform = "skewX(-10deg)";
         });
 
         primaryCTAs[i].addEventListener("mouseout", () => {
